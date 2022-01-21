@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff
+Fonts: Graphik, TiemposHeadline, Theinhardt   */
+
+@font-face {
+    font-family: 'GraphikReg';
+    src: url(../font/Graphik-Regular.woff); 
+}
+
+@font-face {
+    font-family: 'GraphikMed';
+    src: url(../font/Graphik-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'TheinhardLt';
+    src: url(../font/Theinhardt-Lt.woff);
+}
+
+@font-face {
+    font-family: 'TiemposHead';
+    src: url(../font/TiemposHeadline-Semibold.woff);
+}
+
+
+/*------------------Header------------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav{
+    margin-left: 5rem;
+    font-family: 'GraphikReg';
+
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+header section:nth-of-type(1){
+    margin-right: 5rem;
+    font-family: 'TiemposHead';
+}
+
+header section:nth-of-type(2){
+    margin-right: 5rem;
+    font-family: 'GraphikMed';
+}
+
+header section:nth-of-type(2) a{
+    border: 2px solid;
+    padding: 8px 50px;
+    border-radius: 5px;
+}
+
+header section:nth-of-type(2) a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*-------------Main----------------*/
+
+/*Section---1----*/
+
+.heroHeader{
+    text-align: center;
+    font-family: 'GraphikReg';
+    font-size: 3rem;
+    margin: 4rem 0;
+}
+
+main section:nth-of-type(1){
+    height: 100vh;
+}
+
+main section:nth-of-type(1) img{
+    width: 100%;
+    height: 78vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*Section-----2-----*/
+
+/*Article-1-*/
+
+main section:nth-of-type(2){
+    margin: 0 10rem;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1){
+    display: flex;
+    margin: 8rem 0 10rem;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) p:first-child{
+    width: 70%;
+    font-family: 'GraphikMed';
+    font-size: 1.5rem;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) aside{
+    margin-left: 3rem;
+    font-family: 'TheinhardLt';
+    width: 10%;
+
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) aside h2{
+    font-size: 3rem;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) aside p:last-child{
+    color: #9FA2A7;
+}
+
+/*Article--2-*/
+
+main section:nth-of-type(2) article:nth-of-type(2){
+    display: flex;
+}
+
+
+main section:nth-of-type(2) article:nth-of-type(2) img{
+    width: 800px;
+    height: 700px;
+    margin-right: 3rem;
+}
+
+
+
+main section:nth-of-type(2) article:nth-of-type(2) aside h2{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    font-family: 'TiemposHead';
+}
+
+main section:nth-of-type(2) article:nth-of-type(2) aside h3{
+    font-family: 'GraphikMed';
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+main section:nth-of-type(2) article:nth-of-type(2) aside p{
+    font-family: 'TheinhardLt';
+    margin-bottom: 2.5rem;
+    color: #848689;
+    font-size: 1.5rem;
+}
+
+/*Aritcle-3-*/
+
+main section:nth-of-type(2) article:nth-of-type(3){
+    margin: 10rem 0;
+    display: flex;
+    background-color: #e9eaec;
+}
+
+main section:nth-of-type(2) article:nth-of-type(3) aside{
+    padding: 7rem 5rem 0rem 5rem;
+    width: 50%;
+}
+
+main section:nth-of-type(2) article:nth-of-type(3) aside h2{
+    font-family: 'TiemposHead';
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+}
+main section:nth-of-type(2) article:nth-of-type(3) aside ol{
+    font-family: 'TheinhardLt';
+    margin: 0 0 2rem 3rem;
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: #3D3E41;
+}
+
+main section:nth-of-type(2) article:nth-of-type(3) aside p{
+    font-family: 'TheinhardLt';
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: #3D3E41;
+}
+
+main section:nth-of-type(2) article:nth-of-type(3) img{
+    width: 900px;
+    height: 610px;
+}
+
+/*Article-4-*/
+
+main section:nth-of-type(2) article:nth-of-type(4){
+    background: url(../img/28.png) no-repeat center/contain;
+    height: 100vh;
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+
+main section:nth-of-type(2) article:nth-of-type(4) aside:nth-of-type(1){
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+}
+
+main section:nth-of-type(2) article:nth-of-type(4) aside:nth-of-type(1) h2{
+    font-family: 'TiemposHead';
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+
+main section:nth-of-type(2) article:nth-of-type(4) aside:nth-of-type(1) p{
+    line-height: 35px;
+    font-family: 'TheinhardLt';
+    font-size: 25px;
+    color: #3D3E41;
+}
+
+main section:nth-of-type(2) article:nth-of-type(4) aside:nth-of-type(2) p{
+    position: absolute;
+    left: 350px;
+    bottom: 180px;
+    font-size: 25px;
+    width: 30%;
+    line-height: 40px;
+    color: #3D3E41;
+}
+
+main section:nth-of-type(2) article:nth-of-type(4) aside:nth-of-type(2) img{
+    position: absolute;
+    bottom: 100px;
+    right: 110px;
+    width: 700px;
+}
+
+
+/*--------------foooter-----------*/
+
+footer h2{
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 4rem;
+}
+
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    font-family: 'GraphikMed';
+}
+footer section img{
+    width: 100px;
+}
+footer section p{
+    color: #3D3E41;
+}
+
+footer section a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
